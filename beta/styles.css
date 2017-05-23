@@ -5,3 +5,29 @@ p.center2d {
  transform: translateX(-50%) translateY(-50%);
  font-size: 6.0vh;
 }
+
+p.photo_art {
+ position: absolute;
+ top: 25%;
+ left: 50%;
+ transform: translateX(-50%) translateY(-50%);
+ font-size: 6.0vh;
+}
+
+p.left {
+ position: absolute;
+ left: 0%;
+ transform: translateX(-50%) translateY(-50%);
+ font-size: 6.0vh;
+}
+
+p.right {
+ position: absolute;
+ left: 100%;
+ transform: translateX(-50%) translateY(-50%);
+ font-size: 6.0vh;
+}
+
+p.scale_6vh {
+ font-size: 6.0vh;
+}
