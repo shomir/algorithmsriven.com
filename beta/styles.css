@@ -6,29 +6,25 @@ p.center2d {
  font-size: 6.0vh;
 }
 
-p.photo_art {
- position: absolute;
- top: 25%;
- left: 50%;
- transform: translateX(-50%) translateY(-50%);
- font-size: 6.0vh;
-}
-
-p.left {
- position: absolute;
- left: 0%;
- transform: translateX(-50%) translateY(-50%);
- font-size: 6.0vh;
-}
-
-p.right {
- position: absolute;
- left: 100%;
- transform: translateX(-50%) translateY(-50%);
- font-size: 6.0vh;
-}
-
-p.scale_font {
+p.scale_left {
+ text-align: left;
  font-size: 8.0vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ margin-left: 5%;
+ margin-right: 5%;
+}
+
+p.scale_right {
+ text-align: right;
+ font-size: 8.0vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ margin-left: 5%;
+ margin-right: 5%;
+}
+
+#vertical_center {
+ position: absolute;
+ top: 50%;
+ width: 100%;
+ transform: translateY(-50%);
 }
