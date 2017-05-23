@@ -29,5 +29,6 @@ p.right {
 }
 
 p.scale_font {
- font-size: 6.0vh;
+ font-size: 8.0vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
