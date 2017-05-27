@@ -34,7 +34,7 @@ p.scale_right {
 .footerholder {
     /*background: none repeat scroll 0 0 transparent; */
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    font-size: 4.0vh;
+    font-size: 2.0vh;
     color: white;
     bottom: 0;
     position: fixed;
@@ -51,6 +51,22 @@ p.scale_right {
  width:100%;
  height:100%;
 } */
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: LightCyan;
+}
 
 body, html {
     height: 100%;
