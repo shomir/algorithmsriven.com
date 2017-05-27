@@ -21,20 +21,39 @@
     </script>
 
     <script>
-        var image_names = ["1", "2", "3"];
+        var image_names = ['1_IMG_6771_lc', '1_IMG_7789_lc', '1_IMG_7283_lc', '1_IMG_7800_lc'];
         var bkg_num = 1;
 
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
-        function setRandBkg() {
-            bkg_num = getRandomInt(1, 3);
-            var style_str = 'background-image: url("bgimages/' + bkg_num.toString() + '.jpg");';
+        function setBkg(image_num) {
+            var style_str = 'background-image: url("bgimages/' + image_names[image_num] + '.jpg");';
             document.getElementsByClassName('bg')[0].setAttribute('style', style_str);
         }
 
-        function nextBkg {
+        function setRandBkg() {
+            bkg_num = getRandomInt(0, 3);
+            setBkg(bkg_num);
+        }
+
+        function nextBkg() {
+            bkg_num = (bkg_num + 1) % image_names.length;
+            setBkg(bkg_num);
+        }
+
+        function prevBkg() {
+            if(bkg_num == 0)
+            {
+                bkg_num = image_names.length - 1;
+            }
+            else {
+                bkg_num = bkg_num - 1;
+            }
+            setBkg(bkg_num);
+        }
+
 
     </script>
 
@@ -50,7 +69,7 @@
         <p class="scale_left">contact</p>
     </div>
 
-    <div class="footerholder">[<< <a href="javascript:setRandBkg()">r</a> >>]</div>
+    <div class="footerholder"><a href="javascript:prevBkg()"><<</a> <a href="javascript:setRandBkg()">r</a> <a href="javascript:nextBkg()">>></a></div>
 
 
 </body>
