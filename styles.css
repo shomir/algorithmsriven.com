@@ -68,6 +68,10 @@ a:hover {
     color: LightCyan;
 }
 
+a:active {
+    color: Cyan;
+}
+
 body, html {
     height: 100%;
 
