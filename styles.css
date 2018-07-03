@@ -15,6 +15,16 @@ p.scale_left {
  color: white;
 }
 
+p.scale_small_left {
+ text-align: left;
+ font-size: 2.0vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ margin-top: 5%;
+ margin-left: 5%;
+ margin-right: 5%;
+ color: black;
+}
+
 p.scale_right {
  text-align: right;
  font-size: 8.0vh;
