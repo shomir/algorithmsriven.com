@@ -6,7 +6,7 @@ p.center2d {
  font-size: 6.0vh;
 }
 
-p.scale_left {
+p.scale_large_left {
  text-align: left;
  font-size: 8.0vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -22,10 +22,10 @@ p.scale_small_left {
  margin-top: 5%;
  margin-left: 5%;
  margin-right: 5%;
- color: black;
+ color: white;
 }
 
-p.scale_right {
+p.scale_large_right {
  text-align: right;
  font-size: 8.0vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -102,6 +102,7 @@ body, html {
     background-size: cover;
 
     position: relative;
+    background-attachment: fixed;
 }
 
 .bg:after {
@@ -113,4 +114,5 @@ body, html {
     position:absolute;
     top:0;
     left:0;
+
 }
