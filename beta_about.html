@@ -4,9 +4,9 @@
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="About the photographer."/>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="beta_styles.css" />
 
-    <title>About - Algorithms Riven</title>
+    <title>Beta About - Algorithms Riven</title>
 
     <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
     <meta http-equiv="expires" content="Sat, 31 Oct 2010 00:00:00 GMT">
@@ -22,7 +22,7 @@
     </script> -->
 
     <script>
-        var image_names = ['1_IMG_0260_lc', '1_IMG_0246_lc', '2_IMG_0183_lc'];
+        var image_names = ['1_IMG_0260_lc', '1_IMG_0246_lc', '1_IMG_1285_lc', '3_IMG_6629_lc', '4_IMG_8748_lc', '5_IMG_9064_lc', '8_IMG_1149_lc'];
         var bkg_num = 1;
 
         function getRandomInt(min, max) {
@@ -31,7 +31,7 @@
 
         function setBkg(image_num) {
             var style_str = 'background-image: url("bgimages_vertical/' + image_names[image_num] + '.jpg");';
-            document.getElementsByClassName('bg')[0].setAttribute('style', style_str);
+            document.body.setAttribute('style', style_str);
         }
 
         function setRandBkg() {
@@ -60,11 +60,16 @@
 
 </head>
 
-<body onload="setRandBkg()">
+<body>
 
-<div class="bg"></div>
+<div class="overlay"></div>
+
+<script type="text/javascript">
+    setRandBkg();
+</script>
 
     <div id="prose_text">
+
 
 <p class="scale_small_left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id mi risus. Donec feugiat risus at est finibus faucibus. Suspendisse sed magna dolor. Nam ac arcu feugiat, elementum justo ac, gravida risus. Sed tincidunt ex vitae auctor dapibus. Morbi augue mi, congue sit amet orci non, porta pellentesque lectus. Aliquam euismod quam vel leo sollicitudin tempor. In dignissim ante non sapien ultrices sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -76,7 +81,10 @@
 
 <p class="scale_small_left">In metus nunc, consectetur ut tempus sed, rhoncus a augue. Mauris et posuere velit. Donec quis metus tortor. Etiam finibus nec mi non sodales. Pellentesque pellentesque ornare posuere. Etiam quis ullamcorper sem, mattis fringilla diam. Nunc lobortis risus ut vehicula ornare. Nulla facilisi.</p>
 
+        <p style="text-align: center"> <a href="javascript:prevBkg()"><<</a>&nbsp; &nbsp; &nbsp;<a href="javascript:setRandBkg()">r</a>&nbsp; &nbsp; &nbsp;<a href="javascript:nextBkg()">>></a> </p>
+
     </div>
+
 
 </body>
 </html>
