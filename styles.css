@@ -15,7 +15,7 @@ p.scale_large_left {
  color: white;
 }
 
-p.scale_small_left {
+#prose_text {
  text-align: left;
  font-size: 2.5vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -23,6 +23,7 @@ p.scale_small_left {
  margin-left: 5%;
  margin-right: 5%;
  color: white;
+ line-height: 1.3;
 }
 
 p.scale_large_right {
@@ -41,7 +42,7 @@ p.scale_large_right {
  transform: translateY(-50%);
 }
 
-#prose_text {
+#about_page {
  position:absolute;
  top: 0%;
  width: 100%;
