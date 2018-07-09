@@ -31,7 +31,7 @@
 
         function setBkg(image_num) {
             var style_str = 'background-image: url("bgimages_horizontal/' + image_names[image_num] + '.jpg");';
-            document.getElementsByClassName('bg')[0].setAttribute('style', style_str);
+            document.body.setAttribute('style', style_str);
         }
 
         function setRandBkg() {
@@ -62,8 +62,7 @@
 
 <body onload="setRandBkg()">
 
-    <div class="bg"></div>
-
+    <div class="overlay"></div>
 
     <div id="vertical_center">
         <p class="scale_large_left"><a href="https://www.flickr.com/photos/algorithmsriven/">portfolio on flickr</a></p>
