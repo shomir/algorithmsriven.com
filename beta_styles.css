@@ -158,3 +158,10 @@ alpha {
     /* position: relative; */
     /* background-attachment: fixed; */
 }
+
+p.about_nav {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    text-align: center;
+    font-size: 2.0vh;
+    color: white;
+}
