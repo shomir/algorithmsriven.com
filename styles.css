@@ -15,7 +15,7 @@ p.scale_large_left {
  color: white;
 }
 
-#prose_text {
+.prose_text {
  text-align: left;
  font-size: 2.5vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -87,6 +87,22 @@ a:hover {
 
 a:active {
     color: Cyan;
+}
+
+.prose_text a:link {
+    color: Khaki;
+}
+
+.prose_text a:hover {
+    color: LightCyan;
+}
+
+.prose_text a:active {
+    color: Cyan;
+}
+
+.prose_text a:visited {
+    color: PeachPuff;
 }
 
 body, html {
