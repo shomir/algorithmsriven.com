@@ -32,6 +32,33 @@ p.scale_large_left {
  border-radius: 25px;
 }
 
+.index_corner_horizontal {
+ text-align: left;
+ font-size: 3vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ margin-left: 6%;
+ margin-top: 2%;
+ position: absolute;
+ color: silver;
+}
+
+.index_corner_vertical {
+ text-align: right;
+ transform: rotate(270deg);
+ transform-origin: left top 0;
+ -ms-transform: rotate(270deg); /* IE 9 */
+ -ms-transform-origin: left top; /* IE 9 */
+ -webkit-transform: rotate(270deg); /* Safari 3-8 */
+ -webkit-transform-origin: left top; /* Safari 3-8 */
+ bottom: 53%;
+ font-size: 3vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ margin-left: 2%;
+ margin-top: 2%;
+ position: absolute;
+ color: silver;
+}
+
 p.scale_large_right {
  text-align: right;
  font-size: 8.0vh;
