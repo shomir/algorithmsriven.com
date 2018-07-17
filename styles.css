@@ -36,7 +36,7 @@ p.scale_large_left {
  text-align: left;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
- margin-left: 6%;
+ margin-left: 4.5%;
  margin-top: 2%;
  position: absolute;
  color: silver;
@@ -44,19 +44,17 @@ p.scale_large_left {
 
 .index_corner_vertical {
  text-align: right;
+ width: 100%;
  transform: rotate(270deg);
- transform-origin: left top 0;
- -ms-transform: rotate(270deg); /* IE 9 */
- -ms-transform-origin: left top; /* IE 9 */
- -webkit-transform: rotate(270deg); /* Safari 3-8 */
- -webkit-transform-origin: left top; /* Safari 3-8 */
- bottom: 53%;
+ transform-origin: right top 0;
+ position: absolute;
+ top: 3vh;
+ left: -100%;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ color: silver;
  margin-left: 2%;
  margin-top: 2%;
- position: absolute;
- color: silver;
 }
 
 p.scale_large_right {
