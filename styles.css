@@ -34,7 +34,7 @@ p.scale_large_left {
 
 .corner_horizontal {
  text-align: left;
- font-size: 4vh;
+ font-size: 4vmin;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
  margin-left: 4ch;
  margin-top: 1ch;
@@ -50,7 +50,7 @@ p.scale_large_left {
  position: absolute;
  top: 1.5ch;
  left: -100%;
- font-size: 4vh;
+ font-size: 4vmin;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
  color: cornsilk;
  margin-left: 1ch;
