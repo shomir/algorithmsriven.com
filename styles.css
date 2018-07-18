@@ -32,17 +32,17 @@ p.scale_large_left {
  border-radius: 25px;
 }
 
-.index_corner_horizontal {
+.corner_horizontal {
  text-align: left;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
- margin-left: 4.5%;
+ margin-left: 5%;
  margin-top: 2%;
  position: absolute;
- color: silver;
+ color: lightgray;
 }
 
-.index_corner_vertical {
+.corner_vertical {
  text-align: right;
  width: 100%;
  transform: rotate(270deg);
@@ -52,9 +52,20 @@ p.scale_large_left {
  left: -100%;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
- color: silver;
+ color: lightgray;
  margin-left: 2%;
  margin-top: 2%;
+}
+
+.bottom-right-bottom {
+ text-align: right;
+ bottom: 0%;
+ font-size: 3vh;
+ font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+ color: silver;
+ margin-bottom: 2%;
+ position: absolute;
+ width: 98%;
 }
 
 p.scale_large_right {
@@ -79,7 +90,7 @@ p.scale_large_right {
  width: 100%;
 }
 
-.footerholder {
+.bkg-turntable {
     /*background: none repeat scroll 0 0 transparent; */
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 2.0vh;
@@ -88,6 +99,7 @@ p.scale_large_right {
     position: fixed;
     text-align: center;
     margin-bottom: 3%;
+    margin-left: 3%;
     width: 100%;
 }
 
