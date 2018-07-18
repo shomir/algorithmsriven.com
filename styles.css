@@ -36,7 +36,7 @@ p.scale_large_left {
  text-align: left;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
- margin-left: 5%;
+ margin-left: 3ch;
  margin-top: 2%;
  position: absolute;
  color: lightgray;
@@ -48,7 +48,7 @@ p.scale_large_left {
  transform: rotate(270deg);
  transform-origin: right top 0;
  position: absolute;
- top: 3vh;
+ top: 3ch;
  left: -100%;
  font-size: 3vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -197,7 +197,8 @@ body, html {
 
 p.about_nav {
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    text-align: center;
+    text-align: right;
+    width: 98%;
     font-size: 2.0vh;
     color: white;
 }
