@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="About the photographer."/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <title>Around the Web - Algorithms Riven</title>
+
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="expires" content="Sat, 31 Oct 2010 00:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+
+    <!-- <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-99119816-1', 'auto');
+        ga('send', 'pageview');
+    </script> -->
+
+    <script>
+        var image_names = ['1_IMG_0260_lc', '8_IMG_1149_lc', '1_IMG_0411_lc', '4_IMG_9815_lc'];
+        var bkg_num = 1;
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function setBkg(image_num) {
+            var style_str = 'background-image: url("bgimages_vertical/' + image_names[image_num] + '.jpg");';
+            document.body.setAttribute('style', style_str);
+        }
+
+        function setRandBkg() {
+            bkg_num = getRandomInt(0, image_names.length - 1);
+            setBkg(bkg_num);
+        }
+
+        function nextBkg() {
+            bkg_num = (bkg_num + 1) % image_names.length;
+            setBkg(bkg_num);
+        }
+
+        function prevBkg() {
+            if(bkg_num == 0)
+            {
+                bkg_num = image_names.length - 1;
+            }
+            else {
+                bkg_num = bkg_num - 1;
+            }
+            setBkg(bkg_num);
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+<div class="overlay_about"></div>
+<div class="corner_horizontal">around the web</div>
+<!-- <div class="corner_vertical">based in state college, pennsylvania</div> -->
+
+<script type="text/javascript">
+    setRandBkg();
+</script>
+
+    <div id="about_page">
+
+
+        <!-- <p class="about_nav"> <a href="javascript:prevBkg()"><<</a>&nbsp; &nbsp; &nbsp;<a href="javascript:setRandBkg()">r</a>&nbsp; &nbsp; &nbsp;<a href="javascript:nextBkg()">>></a> </p> -->
+
+        <div class="prose_text">
+<p>Selected appearances of my photography in articles, reports, etc.:</p>
+           <p><a href="https://www.atlasobscura.com/places/chetham-s-library">Atlas Obscura article on Chetham's Library</a></p>
+           <p><a href="https://ggwash.org/view/65421/how-should-urbanists-respond-to-new-york-terrorist-attacks-using-vehicles-attack-pedestrian-cyclists">Greater Greater Washington - 2017-11-02</a></p>
+            <p><a href="https://www.arup.com/perspectives/publications/research/section/cities-alive-rethinking-the-shades-of-night">Arup - Cities Alive: Rethinking the Shades of Night (page 6)</a></p>
+            <p><a href="https://www.onlyinyourstate.com/kentucky/towns-to-visit-2017-ky/">Only in Your State - The 17 Towns You Need To Visit In Kentucky In 2017</a></p>
+            <p><a href="http://ireport.cnn.com/topics/1114920">CNN - Chetham's Library (selected iReport in collection)</a></p>
+            <p>Most of my photography is available via a Creative Commons <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">BY-NC-SA</a> license, but I appreciate if you <a href="http://scr.im/algoriven">notify me</a> of usage.</p>
+
+<p> &copy; Algorithms Riven 2018 </p>
+
+        </div>
+
+        <p class="about_nav"> <a href="index.html">home</a> </p>
+
+
+
+    </div>
+
+
+</body>
+</html>
