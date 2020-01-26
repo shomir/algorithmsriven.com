@@ -17,19 +17,19 @@ p.scale_large_left {
 
 .prose_text {
  text-align: left;
- font-size: 2.5vh;
+ font-size: 2vh;
  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
  margin-top: 7vh;
- margin-left: 6ch;
+ margin-left: 7ch;
  margin-right: 6ch;
  margin-bottom: 3vh;
  padding-top: 1%;
  padding-left: 2%;
  padding-right: 2%;
  padding-bottom: 1%;
- color: cornsilk;
+ color: black;
  line-height: 1.4;
- background-color: rgba(0,0,0,0.6);
+ background-color: rgba(255,255,255,0.85);
  border-radius: 25px;
 }
 
@@ -134,19 +134,19 @@ a:active {
 }
 
 .prose_text a:link {
-    color: Khaki;
+    color: OliveDrab;
 }
 
 .prose_text a:hover {
-    color: LightCyan;
+    color: ForestGreen;
 }
 
 .prose_text a:active {
-    color: Cyan;
+    color: ForestGreen;
 }
 
 .prose_text a:visited {
-    color: PeachPuff;
+    color: Navy;
 }
 
 body, html {
